@@ -72,4 +72,19 @@ $(function() {
 
     });
 
+    // PLAY VIDEO
+
+
+    var controls = {
+        video: $(".bottom-video"),
+        playpause: $(".playpause")
+    };
+    var video = controls.video[0];
+    controls.playpause.click(function(){
+            video.play();
+            $(this).remove();
+    });
+
+
+
 });
